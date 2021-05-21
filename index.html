@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Expansion of Child Detention</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div>
+      <div class='section'>
+        <h1>Immigrant Children Detention Camps</h1>
+        <h2>DATA78000 - GIS Final Project</h2>
+      </br>
+        <h3>Introduction</h3>
+        Daily U.S. Customs and Border Protection hold migrant children in custody due to illegal immigration challenges and regulations.  We hear on the news that thousands of children are held in a detention camp somewhere in the states.  With GIS I attempted to convey and visualize where these children are coming from?  Are they coming from the Dominican Republic, Brazil, Zimbabwe, or China?  Can we see any trends over the years increasing from specific origins, age groups etc.?  How many children are kept more than 72hrs which is illegal?  Are there specific regions / originating countries with higher influx?  At what port of entries are these children being detained?  I designed a map / visualization that represents data on children and their origins that have been detained by US Customs or Border Protection between the years of 2017 – 2020.  In the form of a poster combining maps developed in QGIS to represent the detained children’s origins / citizenship globally via choropleth and or density map types.  In addition, merge visual graphs derived via another solution to provide additional insights and data such as age groups, top countries, US child detention violations and other related data.  Source data was originally obtained from the US Customs and Border Protection by The Marshall Project in response to Trump’s initiative for child detention of undocumented immigrants.  The original published article can be found here https://www.themarshallproject.org/2020/10/30/500-000-kids-30-million-hours-trump-s-vast-expansion-of-child-detention using data for another topic.  The source data was captured via the “Marshall project” is a combination of two sources:
+      </br>
+      </br>Operations (OFO) child detentions: Detentions of children at ports of entry by the U.S. Customs and Border Protection Border Patrol between mid-January of 2017 and late January of 2020.
+      </br>
+      </br>CBP Border Patrol (BP) child detentions: Detentions of children between ports of entry by the U.S. Customs and Border Protection Office of Field Operations between mid-January of 2017 and mid-June of 2020.
+      </br>
+      </br>Below is a visualization i developed for this project:  Note - Downloading will provide high resolution 48 by 36 poster size in different formats.
+      <h3>Map Poster</h3>
+        <img src="./data/Mapv2.png" alt="Mapv2" class="center" width = "80%" height = "80%">
+      </br>
+      </br>
+      <table style="width:80%">
+        <tr>
+          <th>Download Hi-Res Source Files</th>
+          <th><a href="./data/Mapv2.pdf">PDF</a></th>
+          <th><a href="./data/Mapv2.png">PNG</a></th>
+          <th><a href="./data/Mapv2.jpg">JPG</a></th>
+        </tr>
+      </table>
+      </br>
+      </br>
+        <h3>Data & Methods</h3>
+        SQL & Tableau was utilized for Queries, Data Exploration to look for insights and mostly data cleanup.  The most challenging part of this project was data.  I had to filter and cleanup missing data and or compensate for missing data by joining on different sources.  Tableau provided quick visuals for data.  Most of the work occurred in QGIS.  Geospatial layers reprojections, data joins by attribute or location into the vector json file to develop out the choropleth graph of the world.  The background originates from google maps applied via XYZ tiles, enhanced by layer visuals.  To bring it all together into a single poster, exported from QGIS, Tableau into Photoshop where I enhance visuals via color scheme sampling applied filters and unified structure.
+      </br>
+      </br>
+        <table style="width:80%" class="Left">
+          <tr>
+            <th>Data Files (Not all)</th>
+          </tr>
+            <td><a href="./data/fp_worldlr.json">VECTOR JSON</a></td>
+          </tr>
+          <tr>
+           <td><a href="./data/fp_cbp_2020.csv">MARSHALL PROJECT DATASET</a></td>
+          </tr>
+        </table>
+      </br>
+        <h3>Main Findings / Results / Conclusions</h3>
+        There are rivalries and competitions inside of the JDM Culture, and they're some of the biggest rivalries in the automotive world, like the big three of the Nissan Skyline, Toyota Supra, and the Mazda RX-7. After production of the RX-7 stopped, it became the Skyline vs Supra power struggle we know and love today, but RX-7 used to be a big challenger. But these rivalries don't define the culture. It doesn't matter who's the fastest or the best looking in the end, cause at the end of the day, we all want the same thing. We want to be surrounded by people who share a passion for the same things we do, and that's exactly what you get in the JDM Culture.
+      </br>
+      </br>
+        <h3>Sources</h3>
+        Flagg, Anna, and Andrew R. Calderón. “Trump Detained More Migrant Children At The Border For Far Longer Than We Knew.” The Marshall Project. The Marshall Project, October 30, 2020. https://www.themarshallproject.org/2020/10/30/500-000-kids-30-million-hours-trump-s-vast-expansion-of-child-detention. 
+        </br>
+        </br>
+        Project, The Marshall. “U.S. Customs and Border Protection Child Detentions, 2017 to 2020.” The magic notebook for exploring data / Observable. Observable, February 26, 2021. https://observablehq.com/@themarshallproject/cbp-child-detentions-2017-to-2020. 
+        </br>
+        </br>
+        “Download Vector Maps.” GeoJSON Maps of the globe. Accessed May 14, 2021. https://geojson-maps.ash.ms/.
+      </div>
+    </div>
+</html>
